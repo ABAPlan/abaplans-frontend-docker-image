@@ -75,7 +75,7 @@ Pour pouvoir activer la redirection de toutes les recherches sur le front-end An
 
 Dans le bloc suivant:
 
-```
+```httpd.conf
 <Directory "/usr/local/apache2/htdocs">
     [...]
 </Directory>
@@ -83,7 +83,7 @@ Dans le bloc suivant:
 
 Il faut ajouter les lignes suivantes:
 
-```
+```httpd.conf
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
